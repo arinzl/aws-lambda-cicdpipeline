@@ -29,5 +29,6 @@ Stage2
 
 ## Tidy up
 - Manually delete CloudFormation stack apicaller
+- Manually empty artifact bucket
 - Run command 'Terraform destroy'
  

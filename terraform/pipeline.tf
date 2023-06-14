@@ -54,7 +54,6 @@ resource "aws_codebuild_project" "codebuild" {
 }
 
 
-
 resource "aws_codepipeline" "app_pipeline" {
   name     = "${var.app_name}-pipeline"
   role_arn = aws_iam_role.codepipeline.arn
@@ -65,11 +64,6 @@ resource "aws_codepipeline" "app_pipeline" {
     type     = "S3"
   }
 
-
-  # encryption_key {
-  #   id   = aws_kms_alias.app_kms_alias.arn
-  #   type = "KMS"
-  # }
 
   stage {
     name = "Source"
@@ -153,8 +147,5 @@ resource "aws_codepipeline" "app_pipeline" {
       }
     }
   }
-
-
-
 
 }

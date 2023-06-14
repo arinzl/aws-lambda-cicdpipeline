@@ -4,8 +4,6 @@ resource "aws_ssm_parameter" "lambda_app_target_url" {
   type        = "String"
   value       = "https://replaceme.com/api"
 
-
-
   lifecycle {
     ignore_changes = [
       value
