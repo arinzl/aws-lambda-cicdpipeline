@@ -1,8 +1,14 @@
+# Overview  
+
+Please see blog site https://devbuildit.com/2023/06/15/aws-lambda-deployment-via-ci-cd-pipeline-and-terraform/ for detailed explaination of this repo contents.
+
+
 # Installation  
+This repo (and associated blog) will create CI/CD pipeline and deploy a lambda function.
 
-Two stage installation
+Two stage installation (see below):
 
-![Overview](AWS_CICD_pipeline.png)
+![Overview](./images/AWS_CICD_pipeline.png)
 
 
 ## Requirements:
